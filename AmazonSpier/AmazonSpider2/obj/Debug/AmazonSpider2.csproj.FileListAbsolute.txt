@@ -1,0 +1,10 @@
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Debug\AmazonSpider2.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Debug\AmazonSpider2.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\AmazonSpider2.Form1.resources
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\AmazonSpider2.Properties.Resources.resources
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\AmazonSpider2.csproj.GenerateResource.Cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\AmazonSpider2.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Debug\AmazonSpider2.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Debug\HtmlAgilityPack.dll
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Debug\HtmlAgilityPack.pdb

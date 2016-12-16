@@ -1,0 +1,10 @@
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\通过列表页抓取详情页url.Form1.resources
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\通过列表页抓取详情页url.Properties.Resources.resources
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\通过列表页抓取详情页url.csproj.GenerateResource.Cache
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\bin\Release\通过列表页抓取详情页url.exe
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\bin\Release\通过列表页抓取详情页url.pdb
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\bin\Release\HtmlAgilityPack.dll
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\bin\Release\HtmlAgilityPack.pdb
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\通过列表页抓取详情页url.exe
+E:\代码\vs2008\Projects\AmazonSpier\通过列表页抓取详情页url\obj\Release\通过列表页抓取详情页url.pdb

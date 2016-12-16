@@ -1,0 +1,640 @@
+Assembly HtmlAgilityPack, Version=1.4.6.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class HtmlAgilityPack.MixedCodeDocumentFragment: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Properties:
+    System.String FragmentText 'get set' : 
+    HtmlAgilityPack.MixedCodeDocumentFragmentType FragmentType 'get ' : 
+    Int32 Line 'get set' : 
+    Int32 LinePosition 'get ' : 
+    Int32 StreamPosition 'get ' : 
+  Methods:
+    get_FragmentText(): PrivateScope, Public, HideBySig, SpecialName
+    get_FragmentType(): PrivateScope, Public, HideBySig, SpecialName
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    get_LinePosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamPosition(): PrivateScope, Public, HideBySig, SpecialName
+Class HtmlAgilityPack.MixedCodeDocumentCodeFragment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :HtmlAgilityPack.MixedCodeDocumentFragment
+  Properties:
+    System.String Code 'get set' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    set_Code(String): PrivateScope, Public, HideBySig, SpecialName
+Class HtmlAgilityPack.HtmlWeb: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    PostResponseHandler PostResponse : Public
+    PreHandleDocumentHandler PreHandleDocument : Public
+    PreRequestHandler PreRequest : Public
+  Properties:
+    Boolean AutoDetectEncoding 'get set' : 
+    System.Text.Encoding OverrideEncoding 'get set' : 
+    Boolean CacheOnly 'get set' : 
+    System.String CachePath 'get set' : 
+    Boolean FromCache 'get ' : 
+    Int32 RequestDuration 'get ' : 
+    System.Uri ResponseUri 'get ' : 
+    System.Net.HttpStatusCode StatusCode 'get ' : 
+    Int32 StreamBufferSize 'get set' : 
+    Boolean UseCookies 'get set' : 
+    System.String UserAgent 'get set' : 
+    Boolean UsingCache 'get set' : 
+  Methods:
+    get_AutoDetectEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    set_AutoDetectEncoding(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_OverrideEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    set_OverrideEncoding(Encoding): PrivateScope, Public, HideBySig, SpecialName
+    get_CacheOnly(): PrivateScope, Public, HideBySig, SpecialName
+    set_CacheOnly(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_CachePath(): PrivateScope, Public, HideBySig, SpecialName
+    set_CachePath(String): PrivateScope, Public, HideBySig, SpecialName
+    get_FromCache(): PrivateScope, Public, HideBySig, SpecialName
+    get_RequestDuration(): PrivateScope, Public, HideBySig, SpecialName
+    get_ResponseUri(): PrivateScope, Public, HideBySig, SpecialName
+    get_StatusCode(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamBufferSize(): PrivateScope, Public, HideBySig, SpecialName
+    set_StreamBufferSize(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_UseCookies(): PrivateScope, Public, HideBySig, SpecialName
+    set_UseCookies(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    get_UserAgent(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserAgent(String): PrivateScope, Public, HideBySig, SpecialName
+    get_UsingCache(): PrivateScope, Public, HideBySig, SpecialName
+    set_UsingCache(Boolean): PrivateScope, Public, HideBySig, SpecialName
+    GetContentTypeForExtension(String, String): PrivateScope, Public, Static, HideBySig
+    GetExtensionForContentType(String, String): PrivateScope, Public, Static, HideBySig
+    CreateInstance(String, Type): PrivateScope, Public, HideBySig
+    Get(String, String): PrivateScope, Public, HideBySig
+    Get(String, String, WebProxy, NetworkCredential): PrivateScope, Public, HideBySig
+    Get(String, String, String): PrivateScope, Public, HideBySig
+    Get(String, String, WebProxy, NetworkCredential, String): PrivateScope, Public, HideBySig
+    GetCachePath(Uri): PrivateScope, Public, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    Load(String, String, Int32, String, String): PrivateScope, Public, HideBySig
+    Load(String, String): PrivateScope, Public, HideBySig
+    Load(String, String, WebProxy, NetworkCredential): PrivateScope, Public, HideBySig
+    LoadHtmlAsXml(String, XmlTextWriter): PrivateScope, Public, HideBySig
+    CreateInstance(String, String, XsltArgumentList, Type): PrivateScope, Public, HideBySig
+    CreateInstance(String, String, XsltArgumentList, Type, String): PrivateScope, Public, HideBySig
+    LoadHtmlAsXml(String, String, XsltArgumentList, XmlTextWriter): PrivateScope, Public, HideBySig
+    LoadHtmlAsXml(String, String, XsltArgumentList, XmlTextWriter, String): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.HtmlWeb+PostResponseHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(HttpWebRequest, HttpWebResponse): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(HttpWebRequest, HttpWebResponse, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class HtmlAgilityPack.HtmlWeb+PreHandleDocumentHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(HtmlDocument): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(HtmlDocument, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class HtmlAgilityPack.HtmlWeb+PreRequestHandler: AutoLayout, AnsiClass, Class, NestedPublic, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(HttpWebRequest): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(HttpWebRequest, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface HtmlAgilityPack.IPermissionHelper: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetIsRegistryAvailable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetIsDnsAvailable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class HtmlAgilityPack.PermissionHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    HtmlAgilityPack.IPermissionHelper
+  Methods:
+    GetIsRegistryAvailable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetIsDnsAvailable(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class HtmlAgilityPack.MixedCodeDocument: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    System.String TokenCodeEnd : Public
+    System.String TokenCodeStart : Public
+    System.String TokenDirective : Public
+    System.String TokenResponseWrite : Public
+  Properties:
+    System.String Code 'get ' : 
+    HtmlAgilityPack.MixedCodeDocumentFragmentList CodeFragments 'get ' : 
+    HtmlAgilityPack.MixedCodeDocumentFragmentList Fragments 'get ' : 
+    System.Text.Encoding StreamEncoding 'get ' : 
+    HtmlAgilityPack.MixedCodeDocumentFragmentList TextFragments 'get ' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    get_CodeFragments(): PrivateScope, Public, HideBySig, SpecialName
+    get_Fragments(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_TextFragments(): PrivateScope, Public, HideBySig, SpecialName
+    CreateCodeFragment(): PrivateScope, Public, HideBySig
+    CreateTextFragment(): PrivateScope, Public, HideBySig
+    Load(Stream): PrivateScope, Public, HideBySig
+    Load(Stream, Boolean): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding, Boolean): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding, Boolean, Int32): PrivateScope, Public, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    Load(String, Boolean): PrivateScope, Public, HideBySig
+    Load(String, Encoding): PrivateScope, Public, HideBySig
+    Load(String, Encoding, Boolean): PrivateScope, Public, HideBySig
+    Load(String, Encoding, Boolean, Int32): PrivateScope, Public, HideBySig
+    Load(TextReader): PrivateScope, Public, HideBySig
+    LoadHtml(String): PrivateScope, Public, HideBySig
+    Save(Stream): PrivateScope, Public, HideBySig
+    Save(Stream, Encoding): PrivateScope, Public, HideBySig
+    Save(String): PrivateScope, Public, HideBySig
+    Save(String, Encoding): PrivateScope, Public, HideBySig
+    Save(StreamWriter): PrivateScope, Public, HideBySig
+    Save(TextWriter): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.MixedCodeDocumentFragmentList: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    HtmlAgilityPack.MixedCodeDocument Doc 'get ' : 
+    Int32 Count 'get ' : 
+    HtmlAgilityPack.MixedCodeDocumentFragment Item [Int32] 'get ' : 
+  Methods:
+    get_Doc(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Append(MixedCodeDocumentFragment): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, HideBySig
+    Prepend(MixedCodeDocumentFragment): PrivateScope, Public, HideBySig
+    Remove(MixedCodeDocumentFragment): PrivateScope, Public, HideBySig
+    RemoveAll(): PrivateScope, Public, HideBySig
+    RemoveAt(Int32): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.MixedCodeDocumentFragmentList+MixedCodeDocumentFragmentEnumerator: AutoLayout, AnsiClass, Class, NestedPublic, BeforeFieldInit
+  Interfaces:
+    System.Collections.IEnumerator
+  Properties:
+    HtmlAgilityPack.MixedCodeDocumentFragment Current 'get ' : 
+  Methods:
+    get_Current(): PrivateScope, Public, HideBySig, SpecialName
+    MoveNext(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Reset(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class HtmlAgilityPack.HtmlEntity: AutoLayout, AnsiClass, Class, Public
+  Properties:
+    System.Collections.Generic.Dictionary`2[System.Int32,System.String] EntityName 'get ' : 
+    System.Collections.Generic.Dictionary`2[System.String,System.Int32] EntityValue 'get ' : 
+  Methods:
+    get_EntityName(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_EntityValue(): PrivateScope, Public, Static, HideBySig, SpecialName
+    DeEntitize(String): PrivateScope, Public, Static, HideBySig
+    Entitize(HtmlNode): PrivateScope, Public, Static, HideBySig
+    Entitize(String): PrivateScope, Public, Static, HideBySig
+    Entitize(String, Boolean): PrivateScope, Public, Static, HideBySig
+    Entitize(String, Boolean, Boolean): PrivateScope, Public, Static, HideBySig
+Struct HtmlAgilityPack.MixedCodeDocumentFragmentType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HtmlAgilityPack.MixedCodeDocumentFragmentType Code = 0 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.MixedCodeDocumentFragmentType Text = 1 : Public, Static, Literal, HasDefault
+Struct HtmlAgilityPack.HtmlNodeType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HtmlAgilityPack.HtmlNodeType Document = 0 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlNodeType Element = 1 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlNodeType Comment = 2 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlNodeType Text = 3 : Public, Static, Literal, HasDefault
+Class HtmlAgilityPack.HtmlNodeNavigator: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Xml.XPath.XPathNavigator
+    Void .ctor(System.IO.Stream): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, System.Text.Encoding): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, System.Text.Encoding, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.Stream, System.Text.Encoding, Boolean, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.TextReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Text.Encoding): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Text.Encoding, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String, System.Text.Encoding, Boolean, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.String BaseURI 'get ' : 
+    HtmlAgilityPack.HtmlDocument CurrentDocument 'get ' : 
+    HtmlAgilityPack.HtmlNode CurrentNode 'get ' : 
+    Boolean HasAttributes 'get ' : 
+    Boolean HasChildren 'get ' : 
+    Boolean IsEmptyElement 'get ' : 
+    System.String LocalName 'get ' : 
+    System.String Name 'get ' : 
+    System.String NamespaceURI 'get ' : 
+    System.Xml.XmlNameTable NameTable 'get ' : 
+    System.Xml.XPath.XPathNodeType NodeType 'get ' : 
+    System.String Prefix 'get ' : 
+    System.String Value 'get ' : 
+    System.String XmlLang 'get ' : 
+  Methods:
+    get_BaseURI(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_CurrentDocument(): PrivateScope, Public, HideBySig, SpecialName
+    get_CurrentNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasAttributes(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_HasChildren(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_IsEmptyElement(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_LocalName(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_NamespaceURI(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_NameTable(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_NodeType(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Prefix(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_XmlLang(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    Clone(): PrivateScope, Public, Virtual, HideBySig
+    GetAttribute(String, String): PrivateScope, Public, Virtual, HideBySig
+    GetNamespace(String): PrivateScope, Public, Virtual, HideBySig
+    IsSamePosition(XPathNavigator): PrivateScope, Public, Virtual, HideBySig
+    MoveTo(XPathNavigator): PrivateScope, Public, Virtual, HideBySig
+    MoveToAttribute(String, String): PrivateScope, Public, Virtual, HideBySig
+    MoveToFirst(): PrivateScope, Public, Virtual, HideBySig
+    MoveToFirstAttribute(): PrivateScope, Public, Virtual, HideBySig
+    MoveToFirstChild(): PrivateScope, Public, Virtual, HideBySig
+    MoveToFirstNamespace(XPathNamespaceScope): PrivateScope, Public, Virtual, HideBySig
+    MoveToId(String): PrivateScope, Public, Virtual, HideBySig
+    MoveToNamespace(String): PrivateScope, Public, Virtual, HideBySig
+    MoveToNext(): PrivateScope, Public, Virtual, HideBySig
+    MoveToNextAttribute(): PrivateScope, Public, Virtual, HideBySig
+    MoveToNextNamespace(XPathNamespaceScope): PrivateScope, Public, Virtual, HideBySig
+    MoveToParent(): PrivateScope, Public, Virtual, HideBySig
+    MoveToPrevious(): PrivateScope, Public, Virtual, HideBySig
+    MoveToRoot(): PrivateScope, Public, Virtual, HideBySig
+Class HtmlAgilityPack.HtmlNode: AutoLayout, AnsiClass, Class, Public
+    Void .ctor(HtmlAgilityPack.HtmlNodeType, HtmlAgilityPack.HtmlDocument, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Xml.XPath.IXPathNavigable
+  Fields:
+    System.String HtmlNodeTypeNameComment : Public, Static, InitOnly
+    System.String HtmlNodeTypeNameDocument : Public, Static, InitOnly
+    System.String HtmlNodeTypeNameText : Public, Static, InitOnly
+    System.Collections.Generic.Dictionary`2[System.String,HtmlAgilityPack.HtmlElementFlag] ElementsFlags : Public, Static
+  Properties:
+    HtmlAgilityPack.HtmlAttributeCollection Attributes 'get set' : 
+    HtmlAgilityPack.HtmlNodeCollection ChildNodes 'get set' : 
+    Boolean Closed 'get ' : 
+    HtmlAgilityPack.HtmlAttributeCollection ClosingAttributes 'get ' : 
+    HtmlAgilityPack.HtmlNode FirstChild 'get ' : 
+    Boolean HasAttributes 'get ' : 
+    Boolean HasChildNodes 'get ' : 
+    Boolean HasClosingAttributes 'get ' : 
+    System.String Id 'get set' : 
+    System.String InnerHtml 'get set' : 
+    System.String InnerText 'get ' : 
+    HtmlAgilityPack.HtmlNode LastChild 'get ' : 
+    Int32 Line 'get set' : 
+    Int32 LinePosition 'get set' : 
+    System.String Name 'get set' : 
+    HtmlAgilityPack.HtmlNode NextSibling 'get set' : 
+    HtmlAgilityPack.HtmlNodeType NodeType 'get set' : 
+    System.String OriginalName 'get ' : 
+    System.String OuterHtml 'get ' : 
+    HtmlAgilityPack.HtmlDocument OwnerDocument 'get set' : 
+    HtmlAgilityPack.HtmlNode ParentNode 'get set' : 
+    HtmlAgilityPack.HtmlNode PreviousSibling 'get set' : 
+    Int32 StreamPosition 'get ' : 
+    System.String XPath 'get ' : 
+  Methods:
+    WriteTo(XmlWriter): PrivateScope, Public, HideBySig
+    WriteTo(): PrivateScope, Public, HideBySig
+    CreateNavigator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CreateRootNavigator(): PrivateScope, Public, HideBySig
+    SelectNodes(String): PrivateScope, Public, HideBySig
+    SelectSingleNode(String): PrivateScope, Public, HideBySig
+    get_Attributes(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChildNodes(): PrivateScope, Public, HideBySig, SpecialName
+    get_Closed(): PrivateScope, Public, HideBySig, SpecialName
+    get_ClosingAttributes(): PrivateScope, Public, HideBySig, SpecialName
+    get_FirstChild(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasAttributes(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasChildNodes(): PrivateScope, Public, HideBySig, SpecialName
+    get_HasClosingAttributes(): PrivateScope, Public, HideBySig, SpecialName
+    get_Id(): PrivateScope, Public, HideBySig, SpecialName
+    set_Id(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InnerHtml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InnerHtml(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InnerText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LastChild(): PrivateScope, Public, HideBySig, SpecialName
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    get_LinePosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_NextSibling(): PrivateScope, Public, HideBySig, SpecialName
+    get_NodeType(): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalName(): PrivateScope, Public, HideBySig, SpecialName
+    get_OuterHtml(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OwnerDocument(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParentNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_PreviousSibling(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamPosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_XPath(): PrivateScope, Public, HideBySig, SpecialName
+    CanOverlapElement(String): PrivateScope, Public, Static, HideBySig
+    CreateNode(String): PrivateScope, Public, Static, HideBySig
+    IsCDataElement(String): PrivateScope, Public, Static, HideBySig
+    IsClosedElement(String): PrivateScope, Public, Static, HideBySig
+    IsEmptyElement(String): PrivateScope, Public, Static, HideBySig
+    IsOverlappedClosingElement(String): PrivateScope, Public, Static, HideBySig
+    Ancestors(): PrivateScope, Public, HideBySig
+    Ancestors(String): PrivateScope, Public, HideBySig
+    AncestorsAndSelf(): PrivateScope, Public, HideBySig
+    AncestorsAndSelf(String): PrivateScope, Public, HideBySig
+    AppendChild(HtmlNode): PrivateScope, Public, HideBySig
+    AppendChildren(HtmlNodeCollection): PrivateScope, Public, HideBySig
+    ChildAttributes(String): PrivateScope, Public, HideBySig
+    Clone(): PrivateScope, Public, HideBySig
+    CloneNode(String): PrivateScope, Public, HideBySig
+    CloneNode(String, Boolean): PrivateScope, Public, HideBySig
+    CloneNode(Boolean): PrivateScope, Public, HideBySig
+    CopyFrom(HtmlNode): PrivateScope, Public, HideBySig
+    CopyFrom(HtmlNode, Boolean): PrivateScope, Public, HideBySig
+    DescendantNodes(): PrivateScope, Public, HideBySig (Obsolete)
+    DescendantNodesAndSelf(): PrivateScope, Public, HideBySig (Obsolete)
+    Descendants(): PrivateScope, Public, HideBySig
+    Descendants(String): PrivateScope, Public, HideBySig
+    DescendantsAndSelf(): PrivateScope, Public, HideBySig
+    DescendantsAndSelf(String): PrivateScope, Public, HideBySig
+    Element(String): PrivateScope, Public, HideBySig
+    Elements(String): PrivateScope, Public, HideBySig
+    GetAttributeValue(String, String): PrivateScope, Public, HideBySig
+    GetAttributeValue(String, Int32): PrivateScope, Public, HideBySig
+    GetAttributeValue(String, Boolean): PrivateScope, Public, HideBySig
+    InsertAfter(HtmlNode, HtmlNode): PrivateScope, Public, HideBySig
+    InsertBefore(HtmlNode, HtmlNode): PrivateScope, Public, HideBySig
+    PrependChild(HtmlNode): PrivateScope, Public, HideBySig
+    PrependChildren(HtmlNodeCollection): PrivateScope, Public, HideBySig
+    Remove(): PrivateScope, Public, HideBySig
+    RemoveAll(): PrivateScope, Public, HideBySig
+    RemoveAllChildren(): PrivateScope, Public, HideBySig
+    RemoveChild(HtmlNode): PrivateScope, Public, HideBySig
+    RemoveChild(HtmlNode, Boolean): PrivateScope, Public, HideBySig
+    ReplaceChild(HtmlNode, HtmlNode): PrivateScope, Public, HideBySig
+    SetAttributeValue(String, String): PrivateScope, Public, HideBySig
+    WriteContentTo(TextWriter): PrivateScope, Public, HideBySig
+    WriteContentTo(): PrivateScope, Public, HideBySig
+    WriteTo(TextWriter): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.HtmlTextNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :HtmlAgilityPack.HtmlNode
+  Properties:
+    System.String InnerHtml 'get set' : 
+    System.String OuterHtml 'get ' : 
+    System.String Text 'get set' : 
+  Methods:
+    get_InnerHtml(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_InnerHtml(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_OuterHtml(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+Class HtmlAgilityPack.HtmlDocument: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Xml.XPath.IXPathNavigable
+  Fields:
+    Boolean OptionAddDebuggingAttributes : Public
+    Boolean OptionAutoCloseOnEnd : Public
+    Boolean OptionCheckSyntax : Public
+    Boolean OptionComputeChecksum : Public
+    System.Text.Encoding OptionDefaultStreamEncoding : Public
+    Boolean OptionExtractErrorSourceText : Public
+    Int32 OptionExtractErrorSourceTextMaxLength : Public
+    Boolean OptionFixNestedTags : Public
+    Boolean OptionOutputAsXml : Public
+    Boolean OptionOutputOptimizeAttributeValues : Public
+    Boolean OptionOutputOriginalCase : Public
+    Boolean OptionOutputUpperCase : Public
+    Boolean OptionReadEncoding : Public
+    System.String OptionStopperNodeName : Public
+    Boolean OptionUseIdAttribute : Public
+    Boolean OptionWriteEmptyNodes : Public
+  Properties:
+    Int32 CheckSum 'get ' : 
+    System.Text.Encoding DeclaredEncoding 'get ' : 
+    HtmlAgilityPack.HtmlNode DocumentNode 'get ' : 
+    System.Text.Encoding Encoding 'get ' : 
+    System.Collections.Generic.IEnumerable`1[HtmlAgilityPack.HtmlParseError] ParseErrors 'get ' : 
+    System.String Remainder 'get ' : 
+    Int32 RemainderOffset 'get ' : 
+    System.Text.Encoding StreamEncoding 'get ' : 
+  Methods:
+    get_CheckSum(): PrivateScope, Public, HideBySig, SpecialName
+    get_DeclaredEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_DocumentNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_Encoding(): PrivateScope, Public, HideBySig, SpecialName
+    get_ParseErrors(): PrivateScope, Public, HideBySig, SpecialName
+    get_Remainder(): PrivateScope, Public, HideBySig, SpecialName
+    get_RemainderOffset(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamEncoding(): PrivateScope, Public, HideBySig, SpecialName
+    GetXmlName(String): PrivateScope, Public, Static, HideBySig
+    HtmlEncode(String): PrivateScope, Public, Static, HideBySig
+    IsWhiteSpace(Int32): PrivateScope, Public, Static, HideBySig
+    CreateAttribute(String): PrivateScope, Public, HideBySig
+    CreateAttribute(String, String): PrivateScope, Public, HideBySig
+    CreateComment(): PrivateScope, Public, HideBySig
+    CreateComment(String): PrivateScope, Public, HideBySig
+    CreateElement(String): PrivateScope, Public, HideBySig
+    CreateTextNode(): PrivateScope, Public, HideBySig
+    CreateTextNode(String): PrivateScope, Public, HideBySig
+    DetectEncoding(Stream): PrivateScope, Public, HideBySig
+    DetectEncoding(TextReader): PrivateScope, Public, HideBySig
+    DetectEncodingHtml(String): PrivateScope, Public, HideBySig
+    GetElementbyId(String): PrivateScope, Public, HideBySig
+    Load(Stream): PrivateScope, Public, HideBySig
+    Load(Stream, Boolean): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding, Boolean): PrivateScope, Public, HideBySig
+    Load(Stream, Encoding, Boolean, Int32): PrivateScope, Public, HideBySig
+    Load(TextReader): PrivateScope, Public, HideBySig
+    LoadHtml(String): PrivateScope, Public, HideBySig
+    Save(Stream): PrivateScope, Public, HideBySig
+    Save(Stream, Encoding): PrivateScope, Public, HideBySig
+    Save(StreamWriter): PrivateScope, Public, HideBySig
+    Save(TextWriter): PrivateScope, Public, HideBySig
+    Save(XmlWriter): PrivateScope, Public, HideBySig
+    DetectEncodingAndLoad(String): PrivateScope, Public, HideBySig
+    DetectEncodingAndLoad(String, Boolean): PrivateScope, Public, HideBySig
+    DetectEncoding(String): PrivateScope, Public, HideBySig
+    Load(String): PrivateScope, Public, HideBySig
+    Load(String, Boolean): PrivateScope, Public, HideBySig
+    Load(String, Encoding): PrivateScope, Public, HideBySig
+    Load(String, Encoding, Boolean): PrivateScope, Public, HideBySig
+    Load(String, Encoding, Boolean, Int32): PrivateScope, Public, HideBySig
+    Save(String): PrivateScope, Public, HideBySig
+    Save(String, Encoding): PrivateScope, Public, HideBySig
+    CreateNavigator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class HtmlAgilityPack.HtmlAttribute: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.IComparable
+  Properties:
+    Int32 Line 'get set' : 
+    Int32 LinePosition 'get ' : 
+    System.String Name 'get set' : 
+    System.String OriginalName 'get ' : 
+    HtmlAgilityPack.HtmlDocument OwnerDocument 'get ' : 
+    HtmlAgilityPack.HtmlNode OwnerNode 'get ' : 
+    HtmlAgilityPack.AttributeValueQuote QuoteType 'get set' : 
+    Int32 StreamPosition 'get ' : 
+    System.String Value 'get set' : 
+    System.String XPath 'get ' : 
+  Methods:
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    get_LinePosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Name(): PrivateScope, Public, HideBySig, SpecialName
+    set_Name(String): PrivateScope, Public, HideBySig, SpecialName
+    get_OriginalName(): PrivateScope, Public, HideBySig, SpecialName
+    get_OwnerDocument(): PrivateScope, Public, HideBySig, SpecialName
+    get_OwnerNode(): PrivateScope, Public, HideBySig, SpecialName
+    get_QuoteType(): PrivateScope, Public, HideBySig, SpecialName
+    set_QuoteType(AttributeValueQuote): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamPosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(String): PrivateScope, Public, HideBySig, SpecialName
+    get_XPath(): PrivateScope, Public, HideBySig, SpecialName
+    CompareTo(Object): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Clone(): PrivateScope, Public, HideBySig
+    Remove(): PrivateScope, Public, HideBySig
+Struct HtmlAgilityPack.AttributeValueQuote: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HtmlAgilityPack.AttributeValueQuote SingleQuote = 0 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.AttributeValueQuote DoubleQuote = 1 : Public, Static, Literal, HasDefault
+Class HtmlAgilityPack.HtmlNodeCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(HtmlAgilityPack.HtmlNode): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IList`1[HtmlAgilityPack.HtmlNode]
+    System.Collections.Generic.ICollection`1[HtmlAgilityPack.HtmlNode]
+    System.Collections.Generic.IEnumerable`1[HtmlAgilityPack.HtmlNode]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Item [HtmlAgilityPack.HtmlNode] 'get ' : 
+    HtmlAgilityPack.HtmlNode Item [System.String] 'get ' : 
+    Int32 Count 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    HtmlAgilityPack.HtmlNode Item [Int32] 'get set' : 
+  Methods:
+    get_Item(HtmlNode): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Add(HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(HtmlNode[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Remove(HtmlNode): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    FindFirst(HtmlNodeCollection, String): PrivateScope, Public, Static, HideBySig
+    Append(HtmlNode): PrivateScope, Public, HideBySig
+    FindFirst(String): PrivateScope, Public, HideBySig
+    GetNodeIndex(HtmlNode): PrivateScope, Public, HideBySig
+    Prepend(HtmlNode): PrivateScope, Public, HideBySig
+    Remove(Int32): PrivateScope, Public, HideBySig
+    Replace(Int32, HtmlNode): PrivateScope, Public, HideBySig
+    Descendants(): PrivateScope, Public, HideBySig
+    Descendants(String): PrivateScope, Public, HideBySig
+    Elements(): PrivateScope, Public, HideBySig
+    Elements(String): PrivateScope, Public, HideBySig
+    Nodes(): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.HtmlCommentNode: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :HtmlAgilityPack.HtmlNode
+  Properties:
+    System.String Comment 'get set' : 
+    System.String InnerHtml 'get set' : 
+    System.String OuterHtml 'get ' : 
+  Methods:
+    get_Comment(): PrivateScope, Public, HideBySig, SpecialName
+    set_Comment(String): PrivateScope, Public, HideBySig, SpecialName
+    get_InnerHtml(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    set_InnerHtml(String): PrivateScope, Public, Virtual, HideBySig, SpecialName
+    get_OuterHtml(): PrivateScope, Public, Virtual, HideBySig, SpecialName
+Struct HtmlAgilityPack.HtmlElementFlag: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HtmlAgilityPack.HtmlElementFlag CData = 1 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlElementFlag Empty = 2 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlElementFlag Closed = 4 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlElementFlag CanOverlap = 8 : Public, Static, Literal, HasDefault
+Struct HtmlAgilityPack.HtmlParseErrorCode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    HtmlAgilityPack.HtmlParseErrorCode TagNotClosed = 0 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlParseErrorCode TagNotOpened = 1 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlParseErrorCode CharsetMismatch = 2 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlParseErrorCode EndTagNotRequired = 3 : Public, Static, Literal, HasDefault
+    HtmlAgilityPack.HtmlParseErrorCode EndTagInvalidHere = 4 : Public, Static, Literal, HasDefault
+Class HtmlAgilityPack.Crc32: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    CRC32Bytes(Byte[]): PrivateScope, Public, Static, HideBySig
+    CRC32String(String): PrivateScope, Public, Static, HideBySig
+Class HtmlAgilityPack.MixedCodeDocumentTextFragment: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :HtmlAgilityPack.MixedCodeDocumentFragment
+  Properties:
+    System.String Text 'get set' : 
+  Methods:
+    get_Text(): PrivateScope, Public, HideBySig, SpecialName
+    set_Text(String): PrivateScope, Public, HideBySig, SpecialName
+Class HtmlAgilityPack.HtmlAttributeCollection: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Interfaces:
+    System.Collections.Generic.IList`1[HtmlAgilityPack.HtmlAttribute]
+    System.Collections.Generic.ICollection`1[HtmlAgilityPack.HtmlAttribute]
+    System.Collections.Generic.IEnumerable`1[HtmlAgilityPack.HtmlAttribute]
+    System.Collections.IEnumerable
+  Properties:
+    HtmlAgilityPack.HtmlAttribute Item [System.String] 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    HtmlAgilityPack.HtmlAttribute Item [Int32] 'get set' : 
+  Methods:
+    get_Item(String): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(String, HtmlAttribute): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, HtmlAttribute): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Add(HtmlAttribute): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(HtmlAttribute): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CopyTo(HtmlAttribute[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    IndexOf(HtmlAttribute): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, HtmlAttribute): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(String, String): PrivateScope, Public, HideBySig
+    Append(HtmlAttribute): PrivateScope, Public, HideBySig
+    Append(String): PrivateScope, Public, HideBySig
+    Append(String, String): PrivateScope, Public, HideBySig
+    Contains(String): PrivateScope, Public, HideBySig
+    Prepend(HtmlAttribute): PrivateScope, Public, HideBySig
+    Remove(HtmlAttribute): PrivateScope, Public, HideBySig
+    Remove(String): PrivateScope, Public, HideBySig
+    RemoveAll(): PrivateScope, Public, HideBySig
+    AttributesWithName(String): PrivateScope, Public, HideBySig
+    Remove(): PrivateScope, Public, HideBySig
+Class HtmlAgilityPack.HtmlWebException: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Exception
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class HtmlAgilityPack.HtmlParseError: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    HtmlAgilityPack.HtmlParseErrorCode Code 'get ' : 
+    Int32 Line 'get ' : 
+    Int32 LinePosition 'get ' : 
+    System.String Reason 'get ' : 
+    System.String SourceText 'get ' : 
+    Int32 StreamPosition 'get ' : 
+  Methods:
+    get_Code(): PrivateScope, Public, HideBySig, SpecialName
+    get_Line(): PrivateScope, Public, HideBySig, SpecialName
+    get_LinePosition(): PrivateScope, Public, HideBySig, SpecialName
+    get_Reason(): PrivateScope, Public, HideBySig, SpecialName
+    get_SourceText(): PrivateScope, Public, HideBySig, SpecialName
+    get_StreamPosition(): PrivateScope, Public, HideBySig, SpecialName

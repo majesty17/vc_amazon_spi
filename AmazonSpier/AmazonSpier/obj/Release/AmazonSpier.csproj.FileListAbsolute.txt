@@ -1,0 +1,10 @@
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\bin\Release\AmazonSpier.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\bin\Release\AmazonSpier.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\bin\Release\HtmlAgilityPack.dll
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\bin\Release\HtmlAgilityPack.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\AmazonSpier.Form1.resources
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\AmazonSpier.Properties.Resources.resources
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\AmazonSpier.csproj.GenerateResource.Cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\AmazonSpier.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpier\obj\Release\AmazonSpier.pdb

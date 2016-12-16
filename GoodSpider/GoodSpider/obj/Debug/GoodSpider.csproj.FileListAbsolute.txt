@@ -1,0 +1,10 @@
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\GoodSpider.Form1.resources
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\GoodSpider.Properties.Resources.resources
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\GoodSpider.csproj.GenerateResource.Cache
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\bin\Debug\GoodSpider.exe
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\bin\Debug\GoodSpider.pdb
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\bin\Debug\HtmlAgilityPack.dll
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\bin\Debug\HtmlAgilityPack.pdb
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\GoodSpider.exe
+E:\代码\vs2008\Projects\GoodSpider\GoodSpider\obj\Debug\GoodSpider.pdb

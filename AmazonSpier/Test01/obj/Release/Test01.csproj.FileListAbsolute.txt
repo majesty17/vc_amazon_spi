@@ -1,0 +1,5 @@
+E:\代码\vs2008\Projects\AmazonSpier\Test01\bin\Release\Test01.exe
+E:\代码\vs2008\Projects\AmazonSpier\Test01\bin\Release\Test01.pdb
+E:\代码\vs2008\Projects\AmazonSpier\Test01\obj\Release\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\AmazonSpier\Test01\obj\Release\Test01.exe
+E:\代码\vs2008\Projects\AmazonSpier\Test01\obj\Release\Test01.pdb

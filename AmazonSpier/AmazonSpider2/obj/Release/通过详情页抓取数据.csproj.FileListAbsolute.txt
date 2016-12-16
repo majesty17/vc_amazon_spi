@@ -1,0 +1,10 @@
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Release\通过详情页抓取数据.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Release\通过详情页抓取数据.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Release\HtmlAgilityPack.dll
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\bin\Release\HtmlAgilityPack.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\ResolveAssemblyReference.cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\通过详情页抓取数据.Properties.Resources.resources
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\通过详情页抓取数据.csproj.GenerateResource.Cache
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\通过详情页抓取数据.exe
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\通过详情页抓取数据.pdb
+E:\代码\vs2008\Projects\AmazonSpier\AmazonSpider2\obj\Release\通过详情页抓取数据.Form1.resources
